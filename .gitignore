@@ -1,0 +1,11 @@
+.DS_Store
+/.bundle
+/vendor/bundle/
+html/wp-content/data/
+html/wp-content/upgrade/
+html/wp-content/uploads/
+html/wp-content/themes/twentyfifteen/
+html/wp-content/themes/twentyseventeen/
+html/wp-content/themes/twentysixteen/
+node_modules
+log/*
