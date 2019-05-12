@@ -1,0 +1,10 @@
+// 画像遅延読み込み用のclassです
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}

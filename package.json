@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "start-media",
+  "version": "0.1.0",
+  "description": "Create Wordpress theme.",
+  "repository": {
+    "type": "git",
+    "url": "Your repository"
+  },
+  "scripts": {
+    "build": "mkdirp build && webpack --progress --colors --mode production",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.1.5",
+    "babel-loader": "^8.0.0",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "next",
+    "glob": "^7.1.2",
+    "node-sass": "^4.11.0",
+    "node-sass-glob-importer": "^5.2.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "browserslist": [
+    "last 1 versions",
+    "iOS >= 7",
+    "Android >= 4",
+    "ie >= 9"
+  ]
+}

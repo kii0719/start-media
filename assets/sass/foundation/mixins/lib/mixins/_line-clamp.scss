@@ -1,0 +1,12 @@
+@mixin line-clamp($lines, $font-size, $line-height) {
+  @include line-clamp-fallback-for-non-webkit-browser($lines, $font-size, $line-height);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+}
+
+@mixin line-clamp-fallback-for-non-webkit-browser($lines, $font-size, $line-height) {
+  display: block;
+  max-height: ($lines * $font-size * $line-height);
+  overflow: hidden;
+}

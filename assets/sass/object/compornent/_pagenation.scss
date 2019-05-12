@@ -1,0 +1,44 @@
+.c-pagination {
+
+  &__links {
+    text-align: center;
+
+    .c-paginationLink {
+      padding: 0.8rem 1rem;
+      border-radius: 0.7rem;
+      font-size: 1.4rem;
+      color: $color-black;
+      border: 0.1rem $color-black solid;
+      display: inline-block;
+
+      &--current {
+        color: $color-white;
+        font-weight: bold;
+        border: 0;
+        padding: 0.9rem 1.1rem;
+        background-color: $color-black;
+      }
+    }
+
+    .c-paginationLink + .c-paginationLink {
+      margin-left: $gutter-small;
+    }
+
+    a {
+      color: $color-black;
+      transition: all 0.3s ease;
+      &:focus,
+      &:hover,
+      &:active:focus {
+        opacity: 0.7;
+      }
+    }
+
+  }
+
+  &__index {
+    text-align: center;
+    color: $color-black;
+    margin-top: ($gutter-small * 2);
+  }
+}

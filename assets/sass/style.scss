@@ -1,0 +1,60 @@
+/*!
+Theme Name:
+Theme URI:
+Author:
+Author URI:
+Description:
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+start-media is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+# Mixin
+--------------------------------------------------------------*/
+@import "foundation/mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "foundation/vendor/*.scss";
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+@import "foundation/reset";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "foundation/typography";
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "foundation/variables";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/*.scss";
+
+/*--------------------------------------------------------------
+# Object
+--------------------------------------------------------------*/
+@import "object/**/*.scss";
+
+/*--------------------------------------------------------------
+# library
+--------------------------------------------------------------*/
+@import "foundation/lazyload";

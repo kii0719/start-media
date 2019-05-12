@@ -1,0 +1,13 @@
+@mixin retina($ratio: 2x) {
+  @if $ratio == 2x {
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
+      @content;
+    }
+  }
+
+  @if $ratio == 3x {
+    @media screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi) {
+      @content;
+    }
+  }
+}
